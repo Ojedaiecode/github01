@@ -1,12 +1,20 @@
-# Projeto github01
+# 🧠 Ojed AI & CODE - Share
 
-Este é meu repositório base para testes com Git e GitHub.
+**Projeto Frontend Aberto com Foco em Programação e Templates**
 
-## Estrutura
-- HTML básico
-- Estilos com CSS
-- Scripts com JavaScript
-- Estrutura pronta para testes futuros
+Este projeto é uma vitrine simples e funcional de recursos como:
+- Templates de HTML, CSS e JS
+- Códigos prontos e adaptáveis
+- Botões customizados com animações
+- Destaques diários para devs iniciantes
 
-## Autor
-Ojed AI & Code 🚀
+🎯 **Objetivo**: Criar uma base gratuita e acessível para programadores iniciantes explorarem códigos úteis e inspiradores.
+
+💻 **Tecnologias**:
+- HTML5
+- CSS3
+- JavaScript Vanilla
+
+🚀 **Foco inicial**: Desenvolver o frontend completo, com organização por seções. Backend será estudado futuramente.
+
+🔐 **Status**: Em desenvolvimento
