@@ -1,6 +1,213 @@
 body {
-  background-color: #f9f9f9;
-  font-family: Arial, sans-serif;
-  color: #333;
-  padding: 20px;
+  background-color: #000; /* Preto total */
+  color: #fff;            /* Texto branco para contraste */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+/* Aqui estilizamos o container, que está DENTRO do header */
+header .container {
+  width: 85%; /* Reduz um pouco a largura total do container */
+  max-width: 1700px; /* Limita o tamanho máximo para manter legibilidade */
+  height: 120px; /* Altura fixa do container */
+  margin: 0 auto; /* Centraliza horizontalmente na tela */
+  border: 1px solid rgba(255, 252, 252, 0.932); /* Borda branca bem sutil */
+  border-radius: 10px; /* Cantos arredondados para visual moderno */
+  padding: 20px; /* Espaçamento interno padrão */
+  display: flex; /* Ativa layout flexível para organizar os itens */
+  justify-content: space-between; /* Espaço entre logo e nav */
+  align-items: center; /* Alinha verticalmente ao centro */
+  background-color: #1a1a1a; /* Fundo mais claro que o body pra destacar */
+}
+
+header {
+  margin-top: 30px; /* Distância entre o topo da página e o header */
+}
+
+.logo img {
+  width: 330px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none; /* Remove as bolinhas padrão */
+  display: flex; /* Coloca os itens em linha */
+  flex-wrap: wrap; /* <- Esse aqui é o mágico */
+  gap: 30px; /* Espaço entre os itens */
+  padding: 0; /* Remove espaçamento interno padrão */
+  margin: 0;  /* Remove espaçamento externo padrão */
+}
+
+nav ul li a {
+  color: #fff; /* Cor branca nos links */
+  text-decoration: none; /* Remove sublinhado */
+  font-size: 16px; /* Tamanho da fonte (pode ajustar) */
+}
+
+nav {
+  padding-right: 500px; /* espaçamento dos links no containerr */
+}
+
+nav ul {
+  width: 600px; /* ou o valor que quiser */
+}
+
+nav ul li a:hover {
+  color: #00ffcc; /* muda a cor do texto */
+  text-shadow: 0 0 5px #00ffcc; /* adiciona um brilho sutil */
+  transition: 0.3s ease-in-out; /* deixa o efeito suave */
+}
+
+
+
+
+/* =============== NOTEBOOKS GRANDES (1366px até 1600px) =============== */
+@media screen and (max-width: 1600px) {
+  header .container {
+    width: 90%;
+    padding: 18px;
+  }
+
+  .logo img {
+    width: 300px;
+  }
+
+  nav {
+    padding-right: 300px;
+  }
+
+  nav ul {
+    gap: 25px;
+    width: auto;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+
+/* =============== NOTEBOOKS MÉDIOS E PEQUENOS (1024px até 1365px) =============== */
+@media screen and (max-width: 1365px) {
+  header .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .logo img {
+    width: 250px;
+  }
+
+  nav {
+    padding-right: 100px;
+  }
+
+  nav ul {
+    width: auto;
+    gap: 20px;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+  }
+}
+
+
+/* =============== TABLETS (769px até 1023px) =============== */
+@media screen and (max-width: 1023px) {
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 10px;
+    width: 90%;
+  }
+
+  .logo img {
+    width: 220px;
+    margin-bottom: 15px;
+  }
+
+  nav {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+}
+
+
+/* =============== CELULARES GRANDES (entre 481px e 768px) =============== */
+@media screen and (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 15px;
+    width: 92%;
+  }
+
+  .logo img {
+    width: 200px;
+    margin-bottom: 15px;
+  }
+
+  nav {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  nav ul li a {
+    font-size: 13.5px;
+  }
+}
+
+
+/* =============== CELULARES PEQUENOS (até 480px) =============== */
+@media screen and (max-width: 480px) {
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 12px;
+    width: 95%;
+  }
+
+  .logo img {
+    width: 170px;
+    margin-bottom: 12px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 13px;
+  }
+}
+
+
+/* =============== MAIN INICIO =============== */
+
+
