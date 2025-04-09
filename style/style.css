@@ -298,3 +298,88 @@ nav ul li a:hover {
 }
 
 
+/* =============== FOOTER =============== */
+
+.footer {
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-line {
+  border-top: 2px solid white;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left {
+  flex: 1 1 250px;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+  flex: 2 1 600px;
+  flex-wrap: wrap;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+
+.social-icon svg {
+  width: 30px;
+  height: 30px;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin-right: 12px;        /* ou o valor que preferir */
+}
+
+.social-icon:hover svg {
+  transform: scale(1.1);
+  color: #6366f1;
+}
+
+
+
+
+/* ===============  =============== */
